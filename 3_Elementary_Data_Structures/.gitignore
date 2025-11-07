@@ -1,0 +1,8 @@
+# Binary output
+a.out
+*.o
+*.out
+*.exe
+
+# Basic C template
+C_base.c
