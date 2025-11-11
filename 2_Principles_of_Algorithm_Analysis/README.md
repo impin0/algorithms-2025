@@ -49,12 +49,12 @@ The goal of using such parameter is to *express the resource requirements* of ou
 **What are the typically running times of most algorithms?**
 Most algorithms typically have running times proportional to one of the following functions:
 - *1*: most instruction of most programs are executed once or just a few times, if the all the instruction of the program have this property we say that the program's running time is *constant*
-- *log N*: When the running time of a program is *logarithmic*, the program gets slightly slower as N grows. This commonly occurs in programs that solve a big problem by transformation into a series of smaller problems. We can consider the running time to be less then a large constant
+- *$log N$*: When the running time of a program is *logarithmic*, the program gets slightly slower as N grows. This commonly occurs in programs that solve a big problem by transformation into a series of smaller problems. We can consider the running time to be less then a large constant
 - *N*: Where the running time of a program is *linear*, is the case when a small amount of processing is done on each input element
-- *N log N*: the N log N running time arises when algorithms solve a problem by breaking it up into smaller sub-problems, solving them independently and then combining the solutions
-- *N^2*: when the running time of an algorithm is *quadratic*, that algorithm is practical for use on only relatively small problems. Usually are algorithms that process all pairs of data items (double-nested loops)
-- *N^3*: when the running time of an algorithm is *cubic*, that algorithm is practical for use on only small problems. Usually are algorithms that process all triples of data items (triple-nested loops)
-- *2^N*: few algorithms with *exponential* running time are likely to be appropriate for practical use, even though such algorithms arise naturally as brute-force solution to problems
+- *$N log N$*: the N log N running time arises when algorithms solve a problem by breaking it up into smaller sub-problems, solving them independently and then combining the solutions
+- *$N^2$*: when the running time of an algorithm is *quadratic*, that algorithm is practical for use on only relatively small problems. Usually are algorithms that process all pairs of data items (double-nested loops)
+- *$N^3$*: when the running time of an algorithm is *cubic*, that algorithm is practical for use on only small problems. Usually are algorithms that process all triples of data items (triple-nested loops)
+- *$2^N$*: few algorithms with *exponential* running time are likely to be appropriate for practical use, even though such algorithms arise naturally as brute-force solution to problems
 - *N!*: *factorial* complexity (maximum complexity)
 
 ### Notations
