@@ -15,7 +15,7 @@ Choosing the appropriate data structure for the problem, once the data is organi
 Different data structures require different amount of space and time for common operations.
 The choice directly affects the efficiency and performance of the algorithm
 
-**What is a data type?**
+**What is a data type?**  
 A data type is a *set of values* and a collection of *operation* on those values (operations are associated with types, not the other way around)
 
 **What are the kind of operations associated with a data type?**  
@@ -68,9 +68,8 @@ A linked list is either a *null link* or a link to a node that contains an item 
 **Why they are important?**  
 Is the data structure that we chose when our interest is to go through a collection of items sequentially.
 
-**What are the advantages of linked lists over arrays?**  
+**What is the advantage of linked lists over arrays?**  
 - *Flexibility*: the primary advantage is that links provide us with capability to rearrange the items efficiently, this flexibility is gained at the expense of quick access of any arbitrary item in the list, because the only way to get to an item is to follow links one node to the next
-- Sequential organization is not provided implicitly (yes in arrays)
 
 **What are the conventions used for the link in the final node?**  
 - is a *null link* that points to no node
@@ -183,7 +182,7 @@ The *length*, both represent contiguous areas of memory but the length of an arr
 
 **What is the main operations that we perform on strings?**  
 The *compare* operation: tells us which of two strings would appear first in the dictionary. The strings are compared using the *lexicographic order*, that means comparing the strings character-by-character from beginning to end.
-The compare function can tell us if the strings are equal, by convention the compare function returns a negative number if the first argument strings appears before the second in the second in the dictionary, returns 0 if they are equal and 1 if the first appears after the second
+The compare function can tell us if the strings are equal, by convention the compare function returns a negative number if the first argument strings appears before the second in the dictionary, returns 0 if they are equal and 1 if the first appears after the second
 
 **What are the elementary string-processing operations?**  
 - Compute string length (strlen(a)):
