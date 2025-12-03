@@ -33,7 +33,7 @@ When empirical studies start to consume a significant amount of time, *mathemati
 ### Growth functions
 
 **How can we perform mathematical analysis?**  
-1. *Identify the abstract operations on which the algorithm is based, separating the analysis from the implementation, allowing us to compare algorithms independent of particular implementations or particular computers
+1. *Identify* the abstract operations on which the algorithm is based, separating the analysis from the implementation, allowing us to compare algorithms independent of particular implementations or particular computers
 2. Determine the most *frequently* executed parts of the program for some sample runs
 3. Study the data and model the *input* that might be presented to the algorithm
 
@@ -49,12 +49,12 @@ The goal of using such parameter is to *express the resource requirements* of ou
 **What are the typically running times of most algorithms?**  
 Most algorithms typically have running times proportional to one of the following functions:
 - *1*: most instruction of most programs are executed once or just a few times, if the all the instruction of the program have this property we say that the program's running time is *constant*
-- *$log N$*: When the running time of a program is *logarithmic*, the program gets slightly slower as N grows. This commonly occurs in programs that solve a big problem by transformation into a series of smaller problems. We can consider the running time to be less then a large constant
+- *log N*: When the running time of a program is *logarithmic*, the program gets slightly slower as N grows. This commonly occurs in programs that solve a big problem by transformation into a series of smaller problems. We can consider the running time to be less then a large constant
 - *N*: Where the running time of a program is *linear*, is the case when a small amount of processing is done on each input element
-- *$N log N$*: the N log N running time arises when algorithms solve a problem by breaking it up into smaller sub-problems, solving them independently and then combining the solutions
-- *$N^2$*: when the running time of an algorithm is *quadratic*, that algorithm is practical for use on only relatively small problems. Usually are algorithms that process all pairs of data items (double-nested loops)
-- *$N^3$*: when the running time of an algorithm is *cubic*, that algorithm is practical for use on only small problems. Usually are algorithms that process all triples of data items (triple-nested loops)
-- *$2^N$*: few algorithms with *exponential* running time are likely to be appropriate for practical use, even though such algorithms arise naturally as brute-force solution to problems
+- *N log N*: the N log N running time arises when algorithms solve a problem by breaking it up into smaller sub-problems, solving them independently and then combining the solutions
+- *N^2*: when the running time of an algorithm is *quadratic*, that algorithm is practical for use on only relatively small problems. Usually are algorithms that process all pairs of data items (double-nested loops)
+- *N^3*: when the running time of an algorithm is *cubic*, that algorithm is practical for use on only small problems. Usually are algorithms that process all triples of data items (triple-nested loops)
+- *2^N*: few algorithms with *exponential* running time are likely to be appropriate for practical use, even though such algorithms arise naturally as brute-force solution to problems
 - *N!*: *factorial* complexity (maximum complexity)
 
 ### Notations
@@ -67,15 +67,21 @@ To compute the complexity of an algorithm we use *asymptotic analysis*, which al
  
 **How the Big O notation works?**  
 Given two functions $f(n)$ and $g(n)$, we say that $f(n) = O(g(n))$ "f(n) is bounded above by g(n) asymptotically" if there exist positive constant $c$ such that:
-$0 <= f(n) <= c*g(n)$ for every $n >= n_0$
+$$
+0 <= f(n) <= c*g(n) for every n >= n_0
+$$
 
 **How the Omega Ω notation works?**  
 Given two functions $f(n)$ and $g(n)$, we say that $f(n) = Ω(g(n))$ "f(n) is bounded below by g(n) asymptotically" if there exist positive constant $c$ such that:
-$0 <= c*g(n) <= f(n)$ for every $n >= n_0$
+$$
+0 <= c*g(n) <= f(n) for every n >= n_0
+$$
 
 **How the Theta θ notation works?**  
 Given two functions $f(n)$ and $g(n)$, we say that $f(n) = θ(g(n))$ "f(n) is tightly bounded by g(n) asymptotically" if there exist two positive constants $c_1$ $c_2$ such that:
-$0 <= c_1*g(n) <= f(n) <= c_2*g(n)$ for every $n >= n_0$
+$$
+0 <= c_1*g(n) <= f(n) <= c_2*g(n) for every n >= n_0
+$$
 
 **What are some useful functions to convert real numbers in integers?**  
 When `x` is a real number :  
