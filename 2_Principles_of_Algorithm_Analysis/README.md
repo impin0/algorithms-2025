@@ -76,7 +76,7 @@ $$
 Given two functions $f(n)$ and $g(n)$, we say that $f(n) = Ω(g(n))$ "f(n) is bounded below by g(n) asymptotically" if there exist positive constant $c$ such that:
 
 $$
-0 <= c*g(n) <= f(n) for every n >= n_0
+0 <= c*g(n) <= f(n) \text{for every} n >= n_0
 $$
 
 **How the Theta θ notation works?**  
