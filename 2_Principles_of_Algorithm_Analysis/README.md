@@ -66,7 +66,7 @@ To compute the complexity of an algorithm we use *asymptotic analysis*, which al
 - θ: Theta is the *asymptotic tight bound*
  
 **How the Big O notation works?**  
-Given two functions $f(n)$ and $g(n)$, we say that $f(n) = O(g(n))$ "f(n) is bounded above by g(n) asymptotically" if there exist positive constant $c$ such that:  
+Given two functions $f(n)$ and $g(n)$, we say that $f(n) = O(g(n))$ "f(n) is bounded above by g(n) asymptotically" if there exist positive constant $c$ such that:
 
 $$
 0 <= f(n) <= c*g(n) for every n >= n_0
