@@ -83,7 +83,7 @@ $$
 Given two functions $f(n)$ and $g(n)$, we say that $f(n) = θ(g(n))$ "f(n) is tightly bounded by g(n) asymptotically" if there exist two positive constants $c_1$ $c_2$ such that:
 
 $$
-0 <= c_1*g(n) <= f(n) <= c_2*g(n) \text{ for every } n >= n_0
+0 \le c_1*g(n) <= f(n) <= c_2*g(n) \text{ for every } n >= n_0
 $$
 
 **What are some useful functions to convert real numbers in integers?**  
