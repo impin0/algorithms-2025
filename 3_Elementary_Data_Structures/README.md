@@ -69,7 +69,7 @@ A linked list is either a *null link* or a link to a node that contains an item 
 Is the data structure that we chose when our interest is to go through a collection of items sequentially.
 
 **What is the advantage of linked lists over arrays?**  
-- *Flexibility*: the primary advantage is that links provide us with capability to rearrange the items efficiently, this flexibility is gained at the expense of quick access of any arbitrary item in the list, because the only way to get to an item is to follow links one node to the next
+*Flexibility*: the primary advantage is that links provide us with capability to rearrange the items efficiently, this flexibility is gained at the expense of quick access of any arbitrary item in the list, because the only way to get to an item is to follow links one node to the next
 
 **What are the conventions used for the link in the final node?**  
 - is a *null link* that points to no node
@@ -113,7 +113,7 @@ link create_list(link x, int n_nodes){
 ```
 
 **What are the fundamental operations that we perform on linked lists?**  
-- Traversing the list:
+- Traversing the list:  
 `for(t = x; t != NULL; t = t->next)` or its equivalent while form:
 ```
     while(t != NULL){
@@ -121,7 +121,7 @@ link create_list(link x, int n_nodes){
     }
 ```
 
-- Deleting a node:
+- Deleting a node:  
 `t = x->next;`  
 `x->next = t->next;`  
 `free(t);`  
