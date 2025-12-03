@@ -72,13 +72,6 @@ $$
 0 <= f(n) <= c*g(n) \text{ for every } n >= n_0
 $$
 
-**How the Theta θ notation works?**  
-Given two functions $f(n)$ and $g(n)$, we say that $f(n) = θ(g(n))$ "f(n) is tightly bounded by g(n) asymptotically" if there exist two positive constants $c_1$ $c_2$ such that:
-
-$$
-0 \le c_1*g(n) \le f(n) \le c_2*g(n) \text{ for every } n \ge n_0
-$$
-
 **How the Omega Ω notation works?**  
 Given two functions $f(n)$ and $g(n)$, we say that $f(n) = Ω(g(n))$ "f(n) is bounded below by g(n) asymptotically" if there exist positive constant $c$ such that:
 
@@ -86,6 +79,12 @@ $$
 0 <= c*g(n) <= f(n) \text{ for every } n >= n_0
 $$
 
+**How the Theta θ notation works?**  
+Given two functions $f(n)$ and $g(n)$, we say that $f(n) = θ(g(n))$ "f(n) is tightly bounded by g(n) asymptotically" if there exist two positive constants $c_1$ $c_2$ such that:
+
+$$
+0 \le c_1*g(n) \le f(n) \le c_2*g(n) \text{ for every } n \ge n_0
+$$
 
 **What are some useful functions to convert real numbers in integers?**  
 When `x` is a real number :  
