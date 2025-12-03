@@ -86,6 +86,8 @@ $$
 0 \le c_1*g(n) \le f(n) \le c_2*g(n) \text{ for every } n \ge n_0
 $$
 
+aaaaaaaaaaaaaaa
+
 **What are some useful functions to convert real numbers in integers?**  
 When `x` is a real number :  
 `⌊x⌋` *floor of x*: largest integer lees then or equal to x
