@@ -173,4 +173,3 @@ Because the ability to change the representation is essential for applications w
 **How do we describe a reference to an abstract object?**  
 We use a *handle*, a handle lets client programs refer to abstract objects in assignments, as arguments and as return values, like built in types, while keeping the representation hidden
 
-### Application Based ADT Example
