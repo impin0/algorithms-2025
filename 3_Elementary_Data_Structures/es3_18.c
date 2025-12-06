@@ -18,9 +18,9 @@ int main(int argc, char *argv[]){
     unsigned int seed;
 
     seed = atoi(argv[1]);
+    srand(seed);
 
-    for(int j = 0; j < N_OBSERV; j++, seed++){
-        srand(seed);
+    for(int j = 0; j < N_OBSERV; j++){
         count = 0;
         memset(arr, 0, sizeof(arr));
 
