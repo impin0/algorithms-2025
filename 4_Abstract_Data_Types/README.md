@@ -4,7 +4,6 @@
 - Introduction to ADT
 - Abstract objects and collections of objects
 - Pushdown Stack ADT
-- Examples of stack ADT clients
 - Stack ADT Implementations
 - Creation of a new ADT
 - FIFO queues and generalized queues
@@ -14,7 +13,7 @@
 ### Introducction to ADT
 **What are Abstract Data Types (ADT)?**  
 An ADT is a data type (set of values and collection of operations on those values) that is accessed *only* through an *interface*.  
-We refer to a program that uses an ADT as a *client*, and a program that specifies the data type as an *implementation*
+The part of the program that uses the ADT is referred as *client*, and the part that specifies the data type is the *implementation*
 
 **Why they are important?**  
 Because they allow us to build programs that use *high-level abstractions*, by separating the conceptual transformation that our programs perform on our data from any particular data-structure representation and algorithm implementation. In addition ADTs:
@@ -24,14 +23,7 @@ Because they allow us to build programs that use *high-level abstractions*, by s
 **What is an opaque interface?**  
 We say that the interface is opaque when the representation of data and the functions that implement the operations are in the implementation and are completely *separated* from the client by the interface
 
-**What are the fundamental concepts underlying ADTs?**  
-- Many algorithms that we study serve as implementations for fundamental ADTs that are widely applicable
-- ADTs help us to *encapsulate* the algorithms that we develop, so that we can use the same code for many different purposes
-- ADTs provide a convenient mechanism for our use in the process of developing and *comparing the performance of algorithms*
-
 ### Abstract objects and Collections of objects
-**What is a natural consequence of using ADT?**  
-It trims down the diversity and complexity of large class of computing applications by performing generic manipulation of data objects, and need to access to the information associated with them for a limited number of specific reasons.
 
 **What are the operations that build up collections of objects?**  
 - *insert* a new object into the collection
@@ -44,15 +36,8 @@ They are *generalized queues* of ADT objects. We also need to include explicit o
 **Which is the most important data types that support insert and delete for collections of objects?**  
 The *pushdown stack* is an ADT that comprises two basic operations: insert (push) a new item, and delete (pop) the item that was most recently inserted. Following the LIFO discipline
 
-**How can we explain what a certain ADT is to a client program?**  
-We must give a *specification*, which is a full description of how functions are supposed to behave in formal mathematical notation. In practice we describe behavior in natural language 
-
-### Examples of stack ADT clients
-**How postfix notation works?**  
-In the postfix notation the expression we need to evaluate is in a form where each operator appears after its two arguments, rather than between them (infix notation)
-
 **Why the pushdown stack abstraction is so critical?**  
-Many computers implement basic stack operations in hardware because they naturally implement a function-call mechanism: save the current environment on entry to a function by pushing information onto a stack, and restore the environment by popping the information present on the stack
+Because many computers implement basic stack operations in hardware to implement the function-call mechanism: save the current environment on entry to a function by pushing information onto a stack, and restore the environment by popping the information present on the stack
 
 ### Stack ADT Implementations
 **How can we implement the stack ADT?**  
@@ -61,13 +46,11 @@ We can use:
 - Linked lists, allowing our stack to grow and shrink gracefully. We keep the stack in reverse order (from the array implementation) from the most recently inserted element to the least recently inserted element. To *pop* we remove the node from the front of the list and return his item, to *push* we create a new node and add it to the front of the list. The *initiate* operation is not used.
 
 **What are the difference between the two implementations?**  
-They differ only their performance characteristics (time and space used). The linked list uses more time for the push and pop operation, to allocate memory for each push and deallocate for each pop, if our application performs these operations a huge number of times we might prefer the array implementation.  
-The array implementation uses the amount of space necessary to hold the maximum number of items expected throughout the computation, while the list implementation uses space proportional to the number of items but always uses extra space for on link per item. If we need a huge stack usually nearly full we prefer the array implementation, if such stack size varies dramatically we might prefer the list implementation
+They differ only by their performance characteristics (time and space used). The linked list uses more time for the push and pop operation, to allocate memory for each push and deallocate for each pop, if our application performs these operations a huge number of times we might prefer the array implementation.  
+The array implementation uses the amount of space necessary to hold the maximum number of items expected throughout the computation, while the list implementation uses space proportional to the number of items but always uses extra space for one link per item. If we need a huge stack usually nearly full we prefer the array implementation, if such stack size varies dramatically we might prefer the list implementation
 
-**What are the problems of those implementations?**  
-- Arrays: we need to know the maximum size of the array before using it. This *constraint* is an artificial of out choice to use an array implementation; it is not an essential part of the stack ADT. If we use a high value this implementation will make inefficient use of space, if we choose too small out program might not work at all
-
-We can implement the push and pop operations for the pushdown stack ADT in constant time,, using either arrays or linked lists (fact that follows from the implementation of both)
+**What is a constrain of the array implementation?**  
+We need to know the maximum size of the array before using it. This *constraint* is an artificial of our choice to use an array implementation; it is not an essential part of the stack ADT. If we use a high value this implementation will make inefficient use of space, if we choose too small out program might not work at all
 
 ### Creation of a new ADT
 **How can we design a new ADT?**  
