@@ -10,7 +10,7 @@
 - Duplicate and index items
 - First class ADTs
 
-### Introducction to ADT
+### Introduction to ADT
 **What are Abstract Data Types (ADT)?**  
 An ADT is a data type (set of values and collection of operations on those values) that is accessed *only* through an *interface*.  
 The part of the program that uses the ADT is referred as *client*, and the part that specifies the data type is the *implementation*
