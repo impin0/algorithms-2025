@@ -61,11 +61,6 @@ We can use the following process:
 4. These modification affect the client program, and we modify it accordingly
 5. After few iterations, we have a working client program and a working implementation. So we freeze the interface. At this point the development of the client program and implementation are separable
 
-Another process is:
-1. We define the ADT first (What basic operations would client programs want to perform on data? Which operation do we know how to implement efficiently?)
-2. After we developed an implementation, we might test its efficacy on client programs
-3. We might modify the interface and do more tests, before eventually freezing the interface
-
 **Why splitting the program into three parts is a more effective approach?**  
 - Separates the task of solving the high level problem from the task of solving the low level problem, allowing us to work on the problems independently
 - Gives us a natural way to compare different algorithms and data structures for solving the problem
