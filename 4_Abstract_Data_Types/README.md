@@ -4,7 +4,6 @@
 - Introduction to ADT
 - Abstract objects and collections of objects
 - Pushdown Stack ADT
-- Stack ADT Implementations
 - Creation of a new ADT
 - FIFO queues and generalized queues
 - Duplicate and index items
@@ -39,7 +38,6 @@ The *pushdown stack* is an ADT that comprises two basic operations: insert (push
 **Why the pushdown stack abstraction is so critical?**  
 Because many computers implement basic stack operations in hardware to implement the function-call mechanism: save the current environment on entry to a function by pushing information onto a stack, and restore the environment by popping the information present on the stack
 
-### Stack ADT Implementations
 **How can we implement the stack ADT?**  
 We can use:
 - Arrays: where the items are put in the array, keeping track of the index of the top of the stack. Doing the *push* operation amount to storing the item in the array position indicated by the top-of-stack index, then incrementing the index. Doing the *pop* operation amounts to decrementing the index, then returning the item that is designates. The *initialize* operation involves allocating an array of the indicated size, and the *test if empty* operation involves checking whether the index is 0
@@ -106,8 +104,7 @@ Instead of identify items according to the time that they were inserted into the
 - Inserting and deleting at either end -> *deque ADT*
 
 ### Duplicate and index items
-**How can we disallow duplicate items in the data structure?**  
-**How has the responsibility of enforcing such rule?**  
+**Who has the responsibility of enforcing policies in ADTs?**  
 We want to detect and resolve duplicates as part of the problems that ADT resolve, not leaving it up to the client. 
 
 **What are the consequence of such decision?**  
